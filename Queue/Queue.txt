@@ -1,0 +1,7 @@
+The queue data structure is another of those important data structures that will 
+definitely be used pretty heavily in the industry. Some of the examples will be the 
+various queueing systems that manage thousands of messages to do asynchronous 
+processing of the messages into useful output. The queue data structure also has its 
+own mantra as well “First in, First out”—essentially, like how you would expect of 
+a queue in real life. If you had queued up for anything before, you would roughly 
+understand how this data structure operates as it does so in a similar fashion.
