@@ -1,0 +1,21 @@
+The stack data structure is probably one of the more practical data structures that will 
+be used in the industry. This data structure follows the saying of “First In Last Out” 
+or “Last In First Out.” You can imagine the stack data structure similar to stacking 
+a stack of clean plates. In such a scenario, one side would be “feeding” the stack by 
+maybe cleaning dirty plates and stacking them in the stack of possible plates to be 
+
+used. The other side might be using the stack of plates by taking the plate from the 
+top of the stack of clean plates to serve food.
+ 
+This might be better understood with a numerical example. Let us say we managed 
+to have a small piece of code that implemented the “stack” data structure. It would 
+namely contain the functions of AddToStack as well as RemoveItemFromStack. Let us 
+say we are to add a single numeric item, “2” into it via AddToStack and then proceed 
+to add another numeric item, “5,” to the stack. That would mean there will be two 
+items in the stack, which are 2 and 5. If we are to go through the entire stack and 
+remove items from the stack, one item at a time via RemoveItemFromStack, the very 
+
+first item that would be removed would be “5.” This corresponds to the saying in the 
+previous paragraph, which is “First In Last Out” or “Last In First Out.” The “5” is 
+the last item that was added to this data structure—and hence, if we are to take items 
+out of the structure, then “5” will also be the numeric item to be taken out.
