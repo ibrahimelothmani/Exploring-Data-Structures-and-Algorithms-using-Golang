@@ -1,4 +1,4 @@
-echo "# Data Structures and Algorithms Implementation
+# Data Structures and Algorithms Implementation
 
 This repository contains implementations of various fundamental data structures and algorithms in Go. It serves as a learning resource for understanding the core concepts of computer science and their practical applications.
 
