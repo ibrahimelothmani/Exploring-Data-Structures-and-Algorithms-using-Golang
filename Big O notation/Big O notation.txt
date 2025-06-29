@@ -1,0 +1,64 @@
+ There are numerous algorithms that have been designed out there, and each has its 
+own peculiarities and properties in order to implement the solution for a computation 
+problem. However, to us as programmers, we will need to be able to understand the 
+benefits and advantages an algorithm brings compared to an alternative algorithm, 
+and we need some sort of common mechanism that will allow us to understand and 
+compare algorithms. With that mechanism, we will be able to argue about why an 
+algorithm is chosen (maybe it can solve the problem in a more timely fashion).
+ Most of the time, we will be concerned with how fast an algorithm solves a problem 
+(a lot of computational problems out there require us to develop algorithms that 
+will ensure that the systems being built are responsive, and this would require 
+the algorithms to complete calculations in as short of a timeframe as possible). 
+This is known as time complexity—and we can try to somewhat estimate the time 
+complexity of the algorithm by going through its implementation to see how many 
+times it has to go through the data and how frequently it accesses a piece of data.
+ Let us say we take the most simplest problem of finding an item in an “unsorted” 
+list. What will a naïve implementation look like? An easy way to solve it would be 
+
+ to do a loop across the entire list once, and if we find it, we will return the result. The 
+code for that would look like the following:
+ func Search(a int, values []int) int {
+ for i := 0; i < len(values); i++ {
+ if values[i] == a {
+ return i
+ }
+ }
+ return 0
+ }
+ From this array—we can somewhat say that the algorithm will require a single 
+pass through the entire list. If there are four items within the list, the algorithm 
+will need to check four items and do the comparison for those four accordingly. If 
+there are 100 items, the algorithm would potentially need to go through it 100 items. 
+Understanding this intuition—we can say “generally” that for “n” items in the list, 
+the algorithm will go through “n” items. We can denote the time complexity for this 
+algorithm in terms of searching for an item in that data structure to be O(n).
+ As a matter of comparison, we compare such a search of items in a “list” to search 
+for an item in a hash map. A hash map would return the value “immediately”—we 
+rely on an optimized version of it provided by the Golang runtime. Seeing that when 
+searching for an item in a hashmap, it will return the value immediately—we can 
+say that the time complexity of finding an item within a hashmap data structure is 
+“O(1).” Regardless of how big the list of items stored in a hashed map is, the time it 
+takes should still remain “O(1)” since the data structure is built to ensure that we can 
+immediately jump to obtain the data value immediately.
+ The previous comparison between algorithms and data structures may not be 
+entirely fair—but the main point here is how we can reason out the efficiencies 
+of algorithms by looking at their implementation and how frequently it needs to 
+access/go through the data it is trying to process. In terms of comparing the two 
+scenarios—we can somewhat choose which implementation to prefer—if we are 
+trying to go for a more efficient and faster process, we will go for the hash map—the 
+“O(1)” time complexity is better than “O(n)” time complexity.
+ However, one might argue—why understanding this is important? And why “O(1)” 
+time complexity is better than “O(n)” time complexity? 
+
+ In order to make this easy to understand—let us assume an exaggerated scenario 
+that the portion of the algorithm that checks if the value of an item that we are 
+looking at in the list is the same item that we are attempting to find is taking 1 second 
+to complete—in the hash map’s case, it will take 1 second to find the item (which 
+would be unlikely to happen in most cases). Regardless of how big the hash map 
+would be—it would still take 1 second to attempt to find the item within it. If we 
+have to compare it to the algorithm of running a simple search by going through 
+the entire list once in order to find the item—it would potentially take “n” seconds 
+to complete. In the worst case of 1,000 items, if the item that we are trying to find is 
+the last item in the list—it would take 1,000 seconds (which is pretty long). Imagine 
+extrapolating this to even bigger lists, and you should be able to see why it is better 
+to go for algorithms that have “smaller” time complexities.
