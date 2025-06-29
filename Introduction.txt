@@ -1,0 +1,31 @@
+Data structures are one of the more vital topics to be covered in the Computer Science 
+curriculum. A good data structure used for a problem can make or break the solution 
+and understanding the benefits and disadvantages of a data structure can allow us 
+to choose the data structure that is most suitable for the problem we are facing.
+ 
+Although it is true that most developers will not deal with data structures on a 
+day-to-day basis (a lot of work for developers tends toward API integration work); 
+however, these data structures underpin and power the various libraries we use 
+without much thought. We are benefiting from its use even if we do not deal with it 
+on a daily basis.
+we will learn more about the various common Data Structures and their possible use cases.
+
+Structure
+we will discuss the following topics:
+ • Singly linked list
+ • Doubly linked list
+ • Circular linked list
+ • Stack
+ • Queue
+ • Binary Tree
+ • Hashing
+
+Objectives
+We will cover the building of various data structures such as linked lists, stacks, 
+queues, binary trees, and hashed maps (hashing). For each of the data structures 
+mentioned here, we will attempt to cover various scenarios (where applicable), such 
+as listing what is in the structure and determining the length of items within the 
+structure. Other scenarios that can also be explored will be the cases where items are 
+inserted into the data structure. Cases where items are removed from the structure 
+as well as cases where one is attempting to search for a specific item within the items 
+in the structure.
