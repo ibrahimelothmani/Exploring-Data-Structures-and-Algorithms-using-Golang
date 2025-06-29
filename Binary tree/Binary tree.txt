@@ -1,0 +1,19 @@
+Binary trees (or generally any tree-based structure) are one of the more confusing 
+varieties of data structures that are used in the various applications out there. A 
+binary tree may not be evidently useful, but when certain concepts/restrictions/
+algorithms are added to it, it becomes extremely useful—an example of this would 
+be the internal representation of data for a database; the main aim would be to 
+quickly retrieve/set values and to ensure that searching/insertion/deletion use 
+cases are consistently performant even as data being stored by the application/
+database continues to grow
+
+As mentioned in the name “binary tree,” that will somehow indicate of how the data 
+structure will form up where you have a root node which will then expand out to 
+form “leaves” and “branches”—imagine the lines being the branches and the leaves 
+being the nodes. 
+The binary comes into play when each node within the structure has two properties pointing to other 
+nodes—one on the left and the other right. Each node’s left and right properties 
+could point to another node or could be blank. An example that we can follow is 
+that for the preceding tree, Node A would have its left value point to Node B while 
+its right value would point to Node C. In the case of Node D, its left and right values 
+are nil—they are not point to any node.
