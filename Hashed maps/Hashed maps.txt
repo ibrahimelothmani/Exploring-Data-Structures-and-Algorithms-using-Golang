@@ -1,0 +1,16 @@
+The hashed maps data structure will probably be one of the most used data structures 
+that one would use (not only in this coding exercise) but also in actual big applications. 
+One of the more common things that we usually do when coding a program would 
+be to hold some sort of key-value reference that is held temporarily before being 
+used further down for more calculations. A naïve approach for temporarily storing 
+such values would be dumping them into the list, but it creates a hassle in order to 
+attempt to search for key-value pairs that we would want to use and so on. At the 
+same time, it also incurs some cost when it comes to doing the searching; iterating 
+through a list just to find a value actually would incur a time penalty (which would 
+be notably felt if the list grows too big). If only there was a data structure that would 
+make such issues kind of go away.
+
+Enter hashed maps. In Golang, when actually building applications, we would just 
+use the data structure itself rather than building one from scratch. It is implementation 
+details are way more complex in order to support proper large applications, but still, 
+it is worth going through what is behind the complexity of hashed maps.
